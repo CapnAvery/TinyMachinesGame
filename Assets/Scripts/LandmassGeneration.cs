@@ -19,7 +19,6 @@ public class LandmassGeneration : MonoBehaviour
     public float SnappingAmount;                //How snappy the snapping should be
     public int ChunkSize;                       //The size of the chunks
     public Material MyMat;
-    public RawImage Display;
     public Texture2D Text;
     private void Start()
     {
@@ -127,7 +126,6 @@ public class LandmassGeneration : MonoBehaviour
         if (Text == null)
         {
             MyMat.mainTexture = TextureGenerator.GenerateTerrain(Tiles);
-            Display.texture = MyMat.mainTexture;
         }
         else
         {
